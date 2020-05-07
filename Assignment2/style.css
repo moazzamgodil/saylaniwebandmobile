@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.logo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container > h1 {
+    color: slateblue;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+    color: white;
+    background-color: slateblue;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.form {
+    width: 80%;
+    background-color: slateblue;
+    color: white;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: inline-block;
+    padding-top: 10px;
+  }
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.formInputs:after {
+        content: "";
+        display: table;
+        clear: both;   
+        margin-bottom: 20px;
+}
+
+.colLabel {
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+  }
+
+.inputs {
+    float: right;
+    width: 75%;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
