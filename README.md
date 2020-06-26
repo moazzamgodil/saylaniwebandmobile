@@ -5,6 +5,11 @@
 
 ## Roll no: WM5425
 
+Assignment 7 - Versatile Calculator Application
+
+[Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment7/index.html)
+[Firebase](https://moazzamwebmobile.web.app/Assignment7/index.html)
+
 Assignment 4 - Build your own professional website
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment4/index.html)
