@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch {
+    height: 200px;
+    width: 500px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px yellow;
+    border-radius: 10px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#display {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.btns {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
