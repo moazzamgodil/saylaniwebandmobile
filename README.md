@@ -5,6 +5,11 @@
 
 ## Roll no: WM5425
 
+Assignment 8 - Versatile Stopwatch Application
+
+[Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment8/index.html)
+[Firebase](https://moazzamwebmobile.web.app/Assignment8/index.html)
+
 Assignment 7 - Versatile Calculator Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment7/index.html)
