@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Assignments - 9</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Assignments - 9</title>
 </head>
+
 <body>
-    <script src="app.js"></script>
+
+  <!-- Chapter 43-48 -->
+
+  <!-- Task 1 -->
+  <!-- <a href="#" onclick="alert('The anchor link is clicked!')">Click Here</a> -->
+
+
+
+  <!-- Task 2 -->
+  <!-- <div>
+        <a href="#" onclick="alert('Thanks for purchasing a phone from us')"><img src="mobile1.png" alt=""></a>
+        <a href="#" onclick="alert('Thanks for purchasing a phone from us')"><img src="mobile2.png" alt=""></a>
+        <a href="#" onclick="alert('Thanks for purchasing a phone from us')"><img src="mobile3.png" alt=""></a>
+    </div> -->
+
+
+
+  <!-- Task 3 -->
+  <!-- <table id="students">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Jhone</td>
+          <td>10</td>
+          <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Doe</td>
+          <td>9</td>
+          <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mark</td>
+          <td>10</td>
+          <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>James</td>
+          <td>8</td>
+          <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+      </table> -->
+
+
+
+  <!-- Task 4 -->
+  <!-- <img onmouseover="pic2()" onmouseout="pic1()" id="image" src="mobile1.png"> -->
+
+
+
+  <!-- Task 5 -->
+  <!-- <p>Counts: <span id="count">0</span></p>
+    <button type="button" onClick="increase()">Increase</button>
+    <button type="button" onClick="decrease()">Decrease</button> -->
+
+  <!-- End of Chapter 43-48 -->
+
+
+
+
+
+  <!-- Chapter 49-52 -->
+
+  <!-- Task 1 -->
+  <!-- First name: <input type="text" id="fname" name="fname"><br>
+  Last name: <input type="text" id="lname" name="lname"><br>
+  Email: <input type="text" id="email" name="email"><br>
+  City: <input type="text" id="city" name="city"><br><br>
+  <input id="submit" type="submit" value="Submit" onclick="displayData()">
+
+  <p id="data"></p> -->
+
+
+
+  <!-- Task 2 -->
+  <!-- <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia, eligendi qui cumque ipsam ex, fugiat aliquam
+    esse atque libero earum ipsa eveniet veniam voluptatibus deleniti reprehenderit aut excepturi dolor. Lorem, ipsum
+    dolor sit amet consectetur adipisicing elit. Fugiat at sequi porro saepe, officia hic error excepturi distinctio?
+    Inventore mollitia delectus libero tempore dicta porro itaque voluptatem. Ipsum, assumenda accusamus. Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Pariatur, reprehenderit quidem iusto tenetur delectus porro magni,
+    deleniti tempora, deserunt labore corrupti molestias? Eaque non eligendi repellendus laudantium molestias.
+    Quibusdam, explicabo?
+    <span id="para2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia,
+      eligendi qui cumque ipsam ex, fugiat aliquam esse atque libero earum ipsa eveniet veniam voluptatibus deleniti
+      reprehenderit aut excepturi dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat at sequi porro
+      saepe, officia hic error excepturi distinctio? Inventore mollitia delectus libero tempore dicta porro itaque
+      voluptatem. Ipsum, assumenda accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      reprehenderit quidem iusto tenetur delectus porro magni, deleniti tempora, deserunt labore corrupti molestias?
+      Eaque non eligendi repellendus laudantium molestias. Quibusdam, explicabo?</span>
+  </p>
+  <a id="more" onclick="read()" href="#">Read More</a> -->
+
+
+
+  <!-- Task 3 -->
+  Name: <input type="text" id="name" name="name"><br>
+  Class: <input type="text" id="classno" name="classno"><br><br>
+  <input id="submit" type="submit" value="Submit" onclick="insertData()">
+
+  <p id="data"></p>
+
+  <table id="students">
+    <tr>
+      <th>Name</th>
+      <th>Class</th>
+    </tr>
+  </table>
+
+  <script>
+    function insertData() {
+      var name = document.getElementById("name").value;
+      var classNo = document.getElementById("classno").value;
+      var insert =
+        `<tr>
+          <td>` + name + `</td>
+          <td>` + classNo + `</td>
+          <td><button onclick="edit(this)">Edit</button></td>
+          <td><button onclick="del(this)">Delete</button></td>
+        </tr>`;
+      document.getElementById('students').innerHTML += insert;
+    }
+
+    function del(a) {
+      var delRow = a.parentNode.parentNode.rowIndex;
+      document.getElementById("students").deleteRow(delRow);
+    }
+
+    function edit(a) {
+      var delRow = a.parentNode.parentNode.rowIndex;
+      document.getElementById("students").deleteRow(delRow);
+    }
+
+  </script>
+
+
+  <script src="app.js"></script>
 </body>
+
 </html>

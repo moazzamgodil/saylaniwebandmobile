@@ -20,309 +20,296 @@
 
 // Task 2
 
-var year = prompt("Enter Year");
+// var year = prompt("Enter Year");
 
-function leapYear(y) {
-    var isLeapYear = false;
+// function leapYear(y) {
+//     var isLeapYear = false;
 
-    if (y % 4 == 0) {
-        if (y % 100 == 0) {
-            if (y % 400 == 0) {
-                isLeapYear = true;
-            }
-        }
-        else {
-            isLeapYear = true;
-        }
-    }
-    return isLeapYear;
-}
+//     if (y % 4 == 0) {
+//         if (y % 100 == 0) {
+//             if (y % 400 == 0) {
+//                 isLeapYear = true;
+//             }
+//         }
+//         else {
+//             isLeapYear = true;
+//         }
+//     }
+//     return isLeapYear;
+// }
 
-var input = leapYear(year);
+// var input = leapYear(year);
 
-if(input == true) {
-    alert(year + " is a leap Year");
-}
-else {
-    alert(year + " is not a leap Year");
-}
+// if(input == true) {
+//     alert(year + " is a leap Year");
+// }
+// else {
+//     alert(year + " is not a leap Year");
+// }
 
 
 
 // Task 3
 
-// var word = "Pakistani";
-// var index = word.indexOf("n");
-// document.write("String: " + word + "<br>Index of 'n': " + index);
+// function areaOfTriangle(a,b,c) {
+
+//     var S = sides(a,b,c);
+//     var area = S*(S-a)*(S-b)*(S-c);
+
+//     return area;
+// }
+
+// function sides(a,b,c) {
+
+//     var S = (a + b + c) / 2;
+//     return S;
+// }
+
+// var res = areaOfTriangle(2,3,4);
+// document.write("Area of Triangle = " + res);
 
 
 
 // Task 4
 
-// var word = "Hello World";
-// var lastIndex = word.lastIndexOf("l");
-// document.write("String: " + word + "<br>Last index of 'l': " + lastIndex);
+// function mainFunction(sub1,sub2,sub3) {
+
+//     var aver = average(sub1,sub2,sub3);
+//     var per = percentage(sub1,sub2,sub3);
+
+//     document.write("Marks 1: " + sub1 + "<br>");
+//     document.write("Marks 2: " + sub2 + "<br>");
+//     document.write("Marks 3: " + sub3 + "<br><br>");
+//     document.write("Average: " + aver + "<br>");
+//     document.write("Percentage: " + per + " %<br>");
+
+// }
+
+// function average(sub1,sub2,sub3) {
+//     var res = (sub1 + sub2 + sub3) / 3;
+//     return res;
+// }
+
+// function percentage(sub1,sub2,sub3) {
+//     var res = ((sub1 + sub2 + sub3) / 300) * 100;
+//     return res;
+// }
+
+// mainFunction(58,75,88);
 
 
 
 // Task 5
 
-// var word = "Pakistani";
-// var charAtIndex = word.charAt(3);
-// document.write("String: " + word + "<br>Character at index 3: " + charAtIndex);
+// function indexOfFunc(str,sentence) {
+
+//     var Arr = sentence.split('');
+
+//     for(var i=0; i<Arr.length; i++) {
+//         if(Arr[i] == str) {
+//             return i;
+//         }
+//     }
+// }
+
+// var index = indexOfFunc("W","Hello World");
+// document.write("Index = " + index);
 
 
 
 // Task 6
 
-// var fname = prompt("Enter your first name");
-// var lname = prompt("Enter your last name");
-// var fullName = fname.concat(" " + lname);
-// document.write("Hello " + fullName);
+// function removeVowels(str){
+//     return str.replace(/[aeiouAEIOU]/g, "");
+// }
+
+// var sentence = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo saepe nesciunt molestiae, veritatis quisquam cum cumque nulla suscipit quis ipsam debitis magni sequi ex, at sed aperiam consequuntur distinctio.";
+// var remVowels = removeVowels(sentence);
+// document.write("Sentence: " + sentence + "<br>");
+// document.write("Removed Vowels: " + remVowels);
 
 
 
 // Task 7
 
-// var city = "Hyderabad";
-// var cityReplace = city.replace("Hyder","Islam");
-// document.write("City: " + city + "<br>After replacement: " + cityReplace);
+
+// function findVowel(str) {
+
+//     str = str.toLowerCase();
+//     var count = 0;
+//     var vowel = false;
+//     var res = "";
+
+//     for (var i = 0; i < str.length; i++) {
+
+//         switch (str.charAt(i)) {
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//                 {
+//                     if (vowel) {
+//                         var res = str.charAt(i-1) + str.charAt(i);
+//                         document.write(res + ", ")
+//                         count++;
+//                         vowel = false;
+//                     }
+//                     else {
+//                         vowel = true;
+//                     }
+//                     break;
+//                 }
+//             default:
+//                 res = "";
+//                 vowel = false;
+//         }
+//     }
+
+//     return "<br>Count: " + count;
+// }
+
+// document.write(findVowel("Pleases read this application and give me gratuity"));
 
 
 
 // Task 8
 
-// var message = "Ali and Sami are best friends. They play cricket and football together.";
-// var replacement = message.replace(/and/g,"&");
-// document.write("Message: " + message + "<br>Replacement: " + replacement);
+// var distance = +prompt("Enter distance between two cities (in km)");
+
+// function meters(dist) {
+//     var res = dist * 1000;
+//     return res;
+// }
+
+// function feet(dist) {
+//     var res = dist * 3281;
+//     return res;
+// }
+
+// function inches(dist) {
+//     var res = dist * 39370;
+//     return res;
+// }
+
+// function centimeters(dist) {
+//     var res = dist * 100000;
+//     return res;
+// }
+
+// document.write("Distance in km: " + distance + "<br>");
+// document.write("Distance in meters: " + meters(distance) + "<br>");
+// document.write("Distance in feet: " + feet(distance) + "<br>");
+// document.write("Distance in inches: " + inches(distance) + "<br>");
+// document.write("Distance in centimeters: " + centimeters(distance) + "<br>");
 
 
 
 // Task 9
 
-// var stringVal = "472";
-// var numVal = parseInt(stringVal);
-// document.write("Value: " + stringVal + "<br>Type: " + typeof(stringVal) + "<br>Value: " + numVal + "<br>Type: " + typeof(numVal));
+// var working_hours = +prompt("Enter the working hours");
+
+// if (working_hours > 40) {
+//     var overtime = working_hours - 40;
+//     var rate = overtime * 12.00;
+//     document.write("Total Working Hours: " + working_hours + "<br>" + "Overtime: " + overtime + "<br>" + "Employee's overtime pay: " + rate);
+// }
+// else {
+//     document.write("Total Working Hours: " + working_hours + "<br>" + "Employee works less than 40 hours / No Overtime");
+// }
 
 
 
 // Task 10
 
-// var userInput = prompt("Enter something to convert to capital letters");
-// var upper = userInput.toUpperCase();
-// document.write("User input: " + userInput + "<br>Upper case: " + upper);
+// var cash = prompt("Enter amount to withdraw!!");
 
+// var hundred = parseInt(cash / 100);
+// var fifty = parseInt((cash % 100) / 50);
+// var ten = parseInt(((cash % 100) % 50) / 10);
+// var remaining = parseInt(((cash % 100) % 50) % 10);
 
-
-// Task 11
-
-// var userInput = prompt("Enter something to convert to title case");
-// var title = userInput.charAt(0).toUpperCase() + userInput.slice(1);
-// document.write("User input: " + userInput + "<br>Title case: " + title);
-
-
-
-// Task 12
-
-// var num = 35.36;
-// var toStr = num.toString();
-// var str = toStr.replace(".","")
-// document.write("Number: " + num + "<br>Result: " + str);
-
-
-
-// Task 13
-
-// var username = prompt("Enter username");
-
-// for(var i = 0; i < username.length; i++) {
-
-//     if(username.charCodeAt(i) == 33 || username.charCodeAt(i) == 44 || username.charCodeAt(i) == 46 || username.charCodeAt(i) == 64) {
-//         alert("Please enter a valid username");
-//     }
-// }
-
-
-
-// Task 14
-
-// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-// var search = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
-// search = search.toLowerCase();
-
-// if (A.indexOf(search) !== -1) {
-//     document.write(search + " is <b>available</b> at index " + A.indexOf(search) + " in our bakery")
-// } else {
-//     document.write("We are sorry. " + search + " is <b>not available</b> in our bakery");
-// }
-
-
-
-// Task 15
-
-// var password = prompt("Enter a valid password");
-// var number = alphabet = false;
-// for(var i=0; i<password.length; i++) {
-
-//     if(password.charCodeAt(i) >= 48 && password.charCodeAt(i) <= 57) {
-//         number = true;
-//     }
-//     else if((password.charCodeAt(i) >= 65 && password.charCodeAt(i) <= 90) || (password.charCodeAt(i) >= 97 && password.charCodeAt(i) <= 122)) {
-//         alphabet = true;
-//     }
-// }
-
-// if(password.length < 6) {
-//     var res = "Password must at least 6 characters long<br>Please enter a valid password";
-// }
-
-// else if(number == alphabet == false) {
-//     var res = "Password should contain alphabets and numbers<br>Please enter a valid password";
-// }
-
-// else if(password.charCodeAt(0) >= 48 && password.charCodeAt(0) <= 57) {
-//     var res = "Password should not start with a number<br>Please enter a valid password";
-// }
-// else {
-//     var res = "Entered Password is Valid";
-// }
-
-// document.write(res);
-
-
-
-// Task 16
-
-// var university = "University of Karachi";
-// var arr = university.split("");
-
-// for(i = 0; i < university.length; i++) {
-//     document.write(arr[i] + "<br>");
-// }
-
-
-
-// Task 17
-
-// var userInput = prompt("Enter Something")
-// var lastChar = userInput.charAt(userInput.length-1);
-// document.write("User input: " + userInput + "<br>Last character of input: " + lastChar);
-
-
-
-// Task 18
-
-// var message = "The quick brown fox jumps over the lazy dog";
-// var countArr = message.toLowerCase().split(" ");
-// var counting = 0;
-
-// for(var i = 0; i < countArr.length; i++) {
-//     if(countArr[i] == "the") {
-//         counting+=1;
-//     }
-// }
-// document.write("Text: " + message + "<br>There are " + counting + " occurrence(s) of word 'the'");
+// document.write("You will have " + hundred + " hundred notes " + fifty + " fifty notes " + ten + " ten notes.");
+// document.write("<br>Remaining Amount is " + remaining);
 
 
 
 
-// ------------------------------Chapter 26-30 ------------------------------//
+// ------------------------------Chapter 43-48 ------------------------------//
 
-// Task 1
-
-// var num = prompt("Enter positive number");
-// var roundOff = Math.round(num);
-// var floor = Math.floor(num);
-// var ceil = Math.ceil(num);
-
-// document.write("number: " + num + "<br>round off value: " + roundOff + "<br>floor value: " + floor + "<br>ceil value: " + ceil);
+// Task 1 >> Html Document
 
 
 
-// Task 2
-
-// var num = prompt("Enter negative number");
-// var roundOff = Math.round(num);
-// var floor = Math.floor(num);
-// var ceil = Math.ceil(num);
-
-// document.write("number: " + num + "<br>round off value: " + roundOff + "<br>floor value: " + floor + "<br>ceil value: " + ceil);
+// Task 2 >> Html Document
 
 
 
 // Task 3
 
-// var val = prompt("Enter any number (+ve / -ve)");
-// var abs = Math.abs(val);
-// document.write("The absolute value of " + val + " is " + abs);
+// function del(a) {
+//     var delRow = a.parentNode.parentNode.rowIndex;
+//     document.getElementById("students").deleteRow(delRow);
+// }
 
 
 
 // Task 4
 
-// var num = (Math.random() * 6) + 1;
-// var dice = parseInt(num);
-// document.write("random dice value: " + dice);
+// function pic1() {
+//     document.getElementById("image").src = "mobile1.png";
+// }
+// function pic2() {
+//     document.getElementById("image").src = "mobile2.png";
+// }
 
 
 
 // Task 5
 
-// var num = (Math.random() * 2) + 1;
-// var coin = parseInt(num);
-// var arr = ["", "Tails", "Heads"];
+// var counting = 0;
+// function increase() {
+//     counting += 1;
+//     document.getElementById("count").innerHTML = counting;
+// };
 
-// document.write(coin + "<br>random coin value: " + arr[coin]);
-
-
-
-// Task 6
-
-// var ran = (Math.random() * 100) + 1;
-// var num = parseInt(ran);
-// document.write("random number between 1 and 100: " + num);
-
-
-
-// Task 7
-
-// var weight = prompt("Enter your weight in kilograms");
-// var num = parseFloat(weight);
-// document.write("The weight of user is " + num + " kilograms");
-
-
-
-// Task 8
-
-// var randomNum = (Math.random() * 10) + 1;
-// var num = parseInt(randomNum);
-// var userInput = +prompt("Enter a number between 1 and 10");
-
-// if(userInput === num) {
-//     alert("Congratulation! You guess the correct number");
-// }
-// else {
-//     alert("Try again!");
-// }
+// function decrease() {
+//     counting -= 1;
+//     document.getElementById("count").innerHTML = counting;
+// };
 
 
 
 
-// ------------------------------Chapter 31-34 ------------------------------//
+// ------------------------------Chapter 49-52 ------------------------------//
 
 // Task 1
 
-// var today = new Date();
-// document.write(today);
+// function displayData() {
+//     var fname = "First name: " + document.getElementById("fname").value;          
+//     var lname = "Last name: " + document.getElementById("lname").value;
+//     var email = "Email: " + document.getElementById("email").value;
+//     var city = "City: " + document.getElementById("city").value;
+//     var result = fname + "<br>" + lname + "<br>" + email + "<br>" + city;
+//     document.getElementById('data').innerHTML = result;
+// }
 
 
 
 // Task 2
 
-// var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-// var today = new Date();
-// var currentMonth = months[today.getMonth()];
-// document.write("Current month: " + currentMonth);
+// function read() {
+//     var more = document.getElementById("more");
+//     var para2 = document.getElementById("para2");
+
+//     if (para2.style.display === "none") {
+//         para2.style.display = "inline";
+//         more.innerHTML = "Read Less";
+//     } else {
+//         para2.style.display = "none";
+//         more.innerHTML = "Read More";
+//     }
+// }
 
 
 
