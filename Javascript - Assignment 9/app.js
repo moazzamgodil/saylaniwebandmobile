@@ -315,10 +315,47 @@
 
 // Task 3
 
-// var today = new Date();
-// var daytoString = today.toString();
-// var day = daytoString.slice(0,3);
-// document.write("Today is " + day);
+// function insertData() {
+//     var name = document.getElementById("name").value;
+//     var classNo = document.getElementById("classno").value;
+//     var insert =
+//       `<tr>
+//         <td id="name">` + name + `</td>
+//         <td id="classNo">` + classNo + `</td>
+//         <td><button onclick="edit(this)">Edit</button></td>
+//         <td><button onclick="del(this)">Delete</button></td>
+//         <td><span id="hiddenForm"></span></td>
+//       </tr>`;
+//     document.getElementById('students').innerHTML += insert;
+//     document.getElementById("name").value = "";
+//     document.getElementById("classno").value = "";
+//   }
+
+//   function del(a) {
+//     var delRow = a.parentNode.parentNode.rowIndex;
+//     document.getElementById("students").deleteRow(delRow);
+//   }
+
+//   function edit(a) {
+//     var editRow = a.parentNode.parentNode.rowIndex;
+//     console.log(editRow);
+    
+//     var cell1 = document.getElementById('students').rows[editRow].cells[0].innerHTML;
+//     var cell2 = document.getElementById('students').rows[editRow].cells[1].innerHTML;
+
+//     document.getElementById("data").innerHTML = `Name: <input type="text" id="name1" name="name"> Class: <input type="text" id="classno1" name="classno"> <input id="submit" type="submit" value="Update" onclick="change(`+editRow+`)">`;
+//     document.getElementById("name1").value = cell1;
+//     document.getElementById("classno1").value = cell2;
+//   }
+
+//   function change(b) {
+//     console.log(b);
+//     var name1 = document.getElementById("name1").value;
+//     var classno1 = document.getElementById("classno1").value;
+//     document.getElementById('students').rows[b].cells[0].innerHTML = name1;
+//     document.getElementById('students').rows[b].cells[1].innerHTML = classno1;
+//     document.getElementById("data").innerHTML = "";
+//   }
 
 
 

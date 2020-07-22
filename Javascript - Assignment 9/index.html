@@ -111,7 +111,7 @@
 
 
   <!-- Task 3 -->
-  Name: <input type="text" id="name" name="name"><br>
+  <!-- Name: <input type="text" id="name" name="name"><br>
   Class: <input type="text" id="classno" name="classno"><br><br>
   <input id="submit" type="submit" value="Submit" onclick="insertData()">
 
@@ -122,32 +122,15 @@
       <th>Name</th>
       <th>Class</th>
     </tr>
-  </table>
+  </table> -->
+
+
+
+  <!-- Task 4 -->
+  
 
   <script>
-    function insertData() {
-      var name = document.getElementById("name").value;
-      var classNo = document.getElementById("classno").value;
-      var insert =
-        `<tr>
-          <td>` + name + `</td>
-          <td>` + classNo + `</td>
-          <td><button onclick="edit(this)">Edit</button></td>
-          <td><button onclick="del(this)">Delete</button></td>
-        </tr>`;
-      document.getElementById('students').innerHTML += insert;
-    }
-
-    function del(a) {
-      var delRow = a.parentNode.parentNode.rowIndex;
-      document.getElementById("students").deleteRow(delRow);
-    }
-
-    function edit(a) {
-      var delRow = a.parentNode.parentNode.rowIndex;
-      document.getElementById("students").deleteRow(delRow);
-    }
-
+    
   </script>
 
 
