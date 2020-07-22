@@ -1,0 +1,50 @@
+/* Chapter 53-58 */
+/* ------------- */
+
+/* Task 1 */
+
+/* #imagesContain {
+    text-align: center;
+}
+
+#imagesContain img {
+    height: 150px;
+    margin: 10px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-open {
+    display: block;
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+.modal-close {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+} */
+
+
+
+
