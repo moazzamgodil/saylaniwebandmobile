@@ -7,13 +7,19 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Commit
 Assignment 10 - Versatile Todo Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment10/index.html)
 [Firebase](https://moazzamwebmobile.web.app/Assignment10/index.html)
 
+<<<<<<< HEAD
 =======
 >>>>>>> Update Readme
+=======
+>>>>>>> Commit
 Assignment 8 - Versatile Stopwatch Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment8/index.html)
