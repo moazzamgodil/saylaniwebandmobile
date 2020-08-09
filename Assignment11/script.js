@@ -347,6 +347,7 @@ function timer() {
     clearInterval(interval);
     minutes.innerHTML = 0 + "" + 0;
     seconds.innerHTML = 0 + "" + 0;
+    result(false);
   }
 
   if (min < 1) {
@@ -390,16 +391,28 @@ function verify() {
       quiz(i);
     }
     else {
-      // clearInterval(interval);
-      // interval = 0;
-      var timeend = min + ":" + sec;
-      // min = 1;
-      // sec = 60;
+      result(true);
+    }
 
+  }
+
+}
+
+function result(e) {
+
+  var timeend = min + ":" + sec;
 
       document.getElementById("questions-list").style.display = "none";
-
       var result = document.getElementById("final-result");
+
+      if(e == false) {
+        var timeover = document.createElement("h2");
+        var timeoverText = document.createTextNode("Time Over :(");
+        timeover.appendChild(timeoverText);
+        result.appendChild(timeover);
+        timeend = "00:00";
+      }
+
       var h2 = document.createElement("h2");
       var h22 = document.createElement("h2");
       var h4 = document.createElement("h4");
@@ -423,16 +436,13 @@ function verify() {
       result.appendChild(btnRes);
 
       document.getElementById("results").style.display = "flex";
-    }
-
-  }
 
 }
+
 
 function end() {
   clearInterval(interval);
   interval = 0;
-  // var timeend = min + ":" + sec;
   min = 1;
   sec = 60;
   document.getElementById("questions-list").style.display = "none";
