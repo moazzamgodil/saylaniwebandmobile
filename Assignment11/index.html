@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    <section id="start-screen" class="section-body">
+        <div class="container">
+            <h1>QUIZ APPLICATION</h1>
+            <button onclick="startQuiz(this)" id="quiz1" class="btn-container">Mathematics</button>
+            <button onclick="startQuiz(this)" id="quiz2" class="btn-container">Pakistan Studies</button>
+            <br>
+            <button onclick="startQuiz(this)" id="quiz3" class="btn-container">English</button>
+            <button onclick="startQuiz(this)" id="quiz4" class="btn-container">General Science</button>
+        </div>
+    </section>
+
+    <section id="questions-list" class="section-body">
+        <div class="timer-contain">
+            <p id="timer"><span id="min"></span>:<span id="sec"></span></p>
+        </div>
+
+        <div class="container">
+            <div id="ques-contain"></div>
+            <div id="answers-options" class="answers-options"></div>
+            <div class="button-next" id="button-next"></div>
+
+        </div>
+    </section>
+
+    <section id="results" class="section-body">
+        <div class="container end-screen" id="final-result"></div>
+    </section>
+    
+    <footer>
+        <p>Made By: Moazzam Ahmed <br> WM5425 - Saylani</p>
+    </footer>
+
+
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>

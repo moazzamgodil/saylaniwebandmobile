@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: cornflowerblue;
+}
+
+section.section-body {
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    background: whitesmoke;
+    min-width: 500px;
+    min-height: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin: 0;
+    background: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+button.btn-container {
+    margin: 2px 0;
+    width: 250px;
+    height: 250px;
+    font-size: 1.5rem;
+    background-color: skyblue;
+    color: black;
+    border-color: white;
+    outline: none;
+}
+
+button.btn-container:hover {
+    background-color: rgb(25, 151, 145);
+    color: white;
+}
+
+.answers-options li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.answers-options input[type=radio] {
+    margin-right: 10px;
+}
+
+.button-next {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+button.next-btn, .end-btn {
+    width: 80px;
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: darkcyan;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.next-btn:hover, .end-btn:hover {
+    background-color: rgb(1, 109, 109);
+}
+
+.timer-contain {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: whitesmoke;
+    text-align: right;
+    padding: 20px;
+    line-height: 0;
+    font-size: 1.8rem;
+    box-shadow: 0px 0px 10px black;
+}
+
+p.timer {
+    margin: 0;
+    padding: 0;
+}
+
+.end-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end-screen h2 {
+    margin: 5px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    margin: 0 10px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 390px;
+    text-align: center;
+}
