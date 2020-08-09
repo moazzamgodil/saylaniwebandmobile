@@ -5,31 +5,21 @@
 
 ## Roll no: WM5425
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Commit
+Assignment 11 - Quiz Application
+
+[Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment11/index.html)
+[Firebase](https://moazzamwebmobile.web.app/Assignment11/index.html)
+
 Assignment 10 - Versatile Todo Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment10/index.html)
 [Firebase](https://moazzamwebmobile.web.app/Assignment10/index.html)
 
-<<<<<<< HEAD
-=======
->>>>>>> Update Readme
-=======
->>>>>>> Commit
 Assignment 8 - Versatile Stopwatch Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment8/index.html)
 [Firebase](https://moazzamwebmobile.web.app/Assignment8/index.html)
 
-<<<<<<< HEAD
-=======
->>>>>>> Update README.md
-=======
->>>>>>> Update Readme
 Assignment 7 - Versatile Calculator Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment7/index.html)
