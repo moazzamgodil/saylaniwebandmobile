@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chat Application</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>CHAT APP</h1>
+        </div>
+
+        <div class="tab">
+            <button class="tabLinks" onclick="auth_tab(event, 'sign-in')" id="defaultOpen">SIGN IN</button>
+            <button class="tabLinks" onclick="auth_tab(event, 'sign-up')">SIGN UP</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="sign-in" class="tabContent">
+
+            <div class="login-form">
+                <form onsubmit="return loginWithEmail();">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="login-email" name="email" placeholder="Your Email">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Your Password">
+
+                    <p id="errorMsg"></p>
+
+                    <input type="submit" value="Sign in">
+                    <!-- <input onclick="loginWithEmail();" type="submit" value="Sign in"> -->
+                </form>
+
+            </div>
+        </div>
+
+        <div id="sign-up" class="tabContent">
+            <div class="login-form">
+                <form onsubmit="registerWithEmail();" method="POST">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="reg-name" name="name" placeholder="Enter Your Full Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="reg-email" name="email" placeholder="Enter Your Email">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="reg-password" name="password" placeholder="Enter Your Password">
+
+                    <p id="errorMsgReg"></p>
+
+                    <input type="submit" value="Sign Up">
+                    <!-- <input onclick="registerWithEmail();" type="submit" value="Sign Up"> -->
+                    <!-- </form> -->
+            </div>
+        </div>
+
+        <div class="break">OR</div>
+
+        <img onclick="fbLogin();" class="loginfb" src="assets/loginfb.png" alt="loginfb">
+
+    </div>
+
+    <footer>
+        Created by Moazzam Ahmed | Roll no. WM5425
+    </footer>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDHQEd68Qpo-NZIpJREydCNbPMiVGAoE3M",
+            authDomain: "moazzamwebmobile.firebaseapp.com",
+            databaseURL: "https://moazzamwebmobile.firebaseio.com",
+            projectId: "moazzamwebmobile",
+            storageBucket: "moazzamwebmobile.appspot.com",
+            messagingSenderId: "679593129648",
+            appId: "1:679593129648:web:4f24a22e5a12262c8ded75",
+            measurementId: "G-TM17Q685K1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in.
+                location.replace("index.html");
+            } else {
+                // No user is signed in.
+            }
+        });
+
+    </script>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

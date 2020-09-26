@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="container home-container">
+
+        <div class="title">
+            <h1>CHAT APP</h1>
+            <div class="rightSide">
+                <h3>Logged in: <span id="userName"></span> | <a id="logout" style="color: grey" href="#" onclick="signOut()">Sign
+                        out</a></h3>
+            </div>
+
+        </div>
+
+        <div class="contain">
+
+            <div class="onlineUsers">
+                <div class="head">
+                    <h3>Online Users</h3>
+                </div>
+                <ul id="online"></ul>
+            </div>
+
+            <div class="messages">
+                <ul id="listMsgs"></ul>
+            </div>
+
+        </div>
+
+        <form onsubmit="return sendMsg();">
+
+            <div class="box">
+
+                <input type="text" name="msg" id="msg" placeholder="Enter message" autocomplete="off">
+                <input type="submit" value="Send">
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDHQEd68Qpo-NZIpJREydCNbPMiVGAoE3M",
+            authDomain: "moazzamwebmobile.firebaseapp.com",
+            databaseURL: "https://moazzamwebmobile.firebaseio.com",
+            projectId: "moazzamwebmobile",
+            storageBucket: "moazzamwebmobile.appspot.com",
+            messagingSenderId: "679593129648",
+            appId: "1:679593129648:web:4f24a22e5a12262c8ded75",
+            measurementId: "G-TM17Q685K1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in.
+                document.getElementById("userName").innerHTML = firebase.auth().currentUser.displayName;
+
+            } else {
+                // No user is signed in.
+                location.replace("login.html");
+            }
+        });
+
+    </script>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
