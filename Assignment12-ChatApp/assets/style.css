@@ -106,17 +106,14 @@ body {
 
 .sender {
     text-transform: uppercase;
-    font-style: italic;
     margin: 5px;
     font-weight: 600;
+    width: 20%;
 }
 
 .message {
     /* font-weight: 600; */
-}
-
-.sender, .message {
-    /* font-size: 18px; */
+    width: 80%;
 }
 
 #listMsgs button {

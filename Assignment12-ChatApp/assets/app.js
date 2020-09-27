@@ -34,7 +34,7 @@ var listMsgs = document.getElementById("listMsgs");
 
 firebase.database().ref("messages").on("child_added", function (item) {
 
-    sender = document.createTextNode(`${item.val().sender}:`);
+    sender = document.createTextNode(`[${item.val().sender}]:`);
     msg = document.createTextNode(`${item.val().message}`);
 
     senderSpan = document.createElement("span");
@@ -166,6 +166,8 @@ function registerWithEmail() {
         // [END_EXCLUDE]
     });
 
+    return false;
+
 }
 
 function loginWithEmail() {
@@ -184,6 +186,8 @@ function loginWithEmail() {
 
         }
     });
+
+    return false;
 }
 
 
