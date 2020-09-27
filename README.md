@@ -5,6 +5,11 @@
 
 ## Roll no: WM5425
 
+Assignment 12 - Chat Application
+
+[Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment12-ChatApp/index.html)
+[Firebase](https://moazzamwebmobile.web.app/Assignment12-ChatApp/index.html)
+
 Assignment 11 - Quiz Application
 
 [Github](https://moazzamgodil.github.io/saylaniwebandmobile/Assignment11/index.html)
